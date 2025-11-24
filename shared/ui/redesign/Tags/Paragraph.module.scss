@@ -1,0 +1,34 @@
+.small {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.medium {
+
+}
+
+.large {
+
+}
+
+.body {
+
+}
+
+.primary {
+  color: var(--primary-color);
+}
+
+.secondary {
+  color: var(--secondary-color);
+}
+
+.tertiary {
+  color: var(--tertiary-color);
+}
+
+.text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

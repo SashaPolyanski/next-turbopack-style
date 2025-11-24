@@ -1,0 +1,61 @@
+.tag {
+  transition-timing-function: var(--animate-icon-transition-function);
+  transition-duration: var(--animate-icon-transition);
+  transition-property: transform;
+  transform: var(--animate-icon-direction);
+  --animate-icon-transition-function: cubic-bezier(0.7, 0, 0.5, 1);
+  --animate-icon-transition: var(--animation-time);
+}
+
+.size {
+  &_s {
+    --icon-animate-base-size: 30px;
+  }
+
+  &_m {
+    --icon-animate-base-size: 40px;
+
+
+  }
+}
+
+.iconWrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--icon-animate-base-size);
+  height: var(--icon-animate-base-size);
+  overflow: hidden;
+  line-height: 0;
+}
+
+.icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: currentcolor;
+}
+
+.animate {
+  &-entered,
+  &-entering {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  &-exited,
+  &-exiting {
+    opacity: 0;
+    transform: scale(0.1);
+  }
+
+  &-entering,
+  &-exiting {
+    position: absolute;
+    transition:
+            transform var(--animate-icon-transition)
+            var(--animate-icon-transition-function),
+            opacity var(--animate-icon-transition)
+            var(--animate-icon-transition-function);
+  }
+}

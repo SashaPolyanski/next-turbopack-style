@@ -1,0 +1,173 @@
+.wrapper {
+  & .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    @include r($screen) {
+      margin-bottom: 24px;
+    }
+
+    & .controls {
+      display: flex;
+      gap: 12px;
+
+
+
+
+      & .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 52px;
+        height: 52px;
+        border: 1px solid var(--stroke-secondary, #E0E0EB);
+        border-radius: var(--BRfull, 100px);
+
+        svg {
+          width: 24px;
+          height: 24px;
+        }
+
+
+        &.whitePrimaryConst {
+          svg {
+            path {
+              fill: var(--mo-text-icon-whitePrimaryConst)
+            }
+          }
+        }
+
+        &.primary {
+          svg {
+            path {
+              fill: var(--mo-text-icon-primary);
+            }
+          }
+        }
+      }
+
+
+    }
+
+    & .buttonSecondary {
+
+      & .arrow rect, .arrow path {
+        stroke: black;
+      }
+    }
+  }
+}
+
+.swiperWrapper {
+  position: relative;
+  display: block;
+  max-width: 100%;
+
+
+  &.overflowOnMobile {
+    max-width: unset;
+
+
+  &.overflowVisibleForce {
+    & > div {
+      overflow: visible;
+    }
+  }
+}
+
+.slide {
+  height: auto;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 16px;
+
+  & .bullet {
+    display: inline-block;
+    width: 30px;
+    height: 5px;
+    padding: 2.5px;
+    margin: 0 6px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 2px;
+    opacity: 0.4;
+    transition: opacity 0.1s ease 0s;
+
+
+  }
+
+  & .bulletSecondary {
+    background-color: #1B1B1B;
+    opacity: 0.4;
+  }
+
+  & .bulletActive, .bulletActiveSecondary {
+    cursor: default;
+    opacity: 1;
+  }
+}
+
+.paginationSecondary {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 100;
+  margin-top: 0;
+  transform: translateX(-50%);
+
+  & .bullet {
+    width: 8px;
+    height: 8px;
+    border-radius: 100px;
+    opacity: 1;
+    transition: all 0.1s ease 0s;
+
+
+  }
+
+  & .bulletSecondary {
+    background-color: #1B1B1B;
+  }
+
+  & .bulletActive, .bulletActiveSecondary {
+    position: relative;
+    width: 60px;
+    overflow: hidden;
+    cursor: default;
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+
+
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      content: "";
+      background-color: rgba(255, 255, 255, 1);
+      animation: progressFill var(--progress-duration, 3s) linear forwards;
+    }
+  }
+}
+
+@keyframes progressFill {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+
+
+
+

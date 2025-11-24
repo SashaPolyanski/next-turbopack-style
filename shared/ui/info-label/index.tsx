@@ -1,0 +1,1 @@
+export { InfoLabel } from './InfoLabel';

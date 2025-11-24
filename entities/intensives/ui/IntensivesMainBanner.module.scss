@@ -1,0 +1,107 @@
+.card {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  min-height: 496px;
+  overflow: hidden;
+  background-color: #1B1B1B !important;
+}
+
+.info {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+
+}
+
+.badges {
+  margin-bottom: 16px;
+
+}
+
+.badge {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.title {
+  margin-bottom: 16px;
+
+
+}
+
+.description {
+  flex: 1 1 auto;
+  margin-bottom: 60px;
+  line-height: 28px;
+  color: #F7F7FA;
+
+
+}
+
+.time {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  min-width: 232px;
+  max-width: 300px;
+  padding: 24px 20px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(60px);
+  border-radius: 24px;
+
+  span {
+    font-family: var(--font-unbounded), serif;
+    font-size: 36px;
+    font-weight: 500;
+    color: #8EFD01;
+
+
+  }
+
+
+}
+
+.button {
+  width: 380px;
+  margin-top: auto;
+
+
+}
+
+.image {
+  position: absolute;
+  right: 40px;
+  bottom: 65px;
+  width: 350px;
+  height: 200px;
+
+
+}
+
+.mobileImage {
+
+}
+
+.round {
+  position: absolute;
+  right: 10px;
+  bottom: -150px;
+  z-index: -1;
+  flex-shrink: 0;
+  width: 355px;
+  height: 355px;
+  background: #FFF;
+  filter: blur(260px);
+  border-radius: 355px;
+
+
+}

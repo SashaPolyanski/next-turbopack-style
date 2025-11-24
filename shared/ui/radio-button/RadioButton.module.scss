@@ -1,0 +1,116 @@
+.radioButton {
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+
+  & .container {
+    position: relative;
+    width: 6.25vw;
+    height: 6.25vw;
+    cursor: pointer;
+
+    @include rmin($mobile) {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  & .inputWrapper {
+    display: grid;
+    place-items: center;
+    width: 6.25vw;
+    height: 6.25vw;
+
+    @include rmin($mobile) {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  & .label {
+    margin-left: 3.75vw;
+    font-size: 4.375vw;
+    line-height: 5.625vw;
+    color: rgb(27 27 27);
+
+    @include rmin($mobile) {
+      margin-left: 16px;
+      font-size: 20px;
+      line-height: 28px
+    }
+  }
+}
+
+
+.radioInput {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  width: 6.25vw;
+  height: 6.25vw;
+  appearance: none;
+  cursor: pointer;
+  background-color: white;
+  border: 2px solid rgb(153 153 153);
+  border-radius: 50%;
+
+  &:disabled {
+    pointer-events: none;
+    border-color: rgb(153 153 153);
+  }
+
+  @include rmin($mobile) {
+    width: 24px;
+    height: 24px;
+  }
+
+  &.right {
+    border-color:  rgb(4 216 0);
+  }
+
+  &.wrong {
+    border-color:  rgb(225 0 49);
+  }
+
+  &.group-hover {
+    &:hover {
+      cursor: pointer;
+      border-color:  rgb(153 153 153);
+    }
+  }
+
+  &.inactive {
+    opacity: 0.5;
+  }
+}
+
+.radioMark {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  width: 2.5vw;
+  height: 2.5vw;
+  background-color: transparent;
+  border-radius: 50%;
+
+  @include rmin($mobile) {
+    width: 12px;
+    height: 12px;
+  }
+
+  &.checked {
+    background-color:  rgb(153 153 153);
+  }
+
+  &.right {
+    background-color:  rgb(4 216 0);
+  }
+
+  &.wrong {
+    background-color: rgb(225 0 49);
+  }
+
+  &.group-hover:not(:disabled) {
+    &:hover {
+      background-color: rgb(153 153 153);
+    }
+  }
+}

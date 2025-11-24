@@ -1,0 +1,14 @@
+.buttonGroup {
+    display: flex;
+    gap: 8px;
+
+
+}
+
+.static {
+    &,
+    a,
+    button {
+        width: 100%;
+    }
+}

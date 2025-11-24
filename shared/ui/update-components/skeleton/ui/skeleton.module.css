@@ -1,0 +1,22 @@
+.skeleton {
+    @apply relative overflow-hidden before:absolute before:left-[-150px] before:block before:w-1/5 before:h-full before:blur-2xl before:animate-[load_2s_infinite_ease-out] before:content-[""] before:top-0 rounded-sm-3-vw opacity-75 sm:rounded-xl-3;
+    background: rgba(130, 130, 130, 0.2);
+}
+
+.skeleton::before {
+    background: linear-gradient(
+            to right,
+            transparent 50%,
+            rgba(130, 130, 130, 0.3) 18%,
+            rgba(130, 130, 130, 0.2) 33%
+    );
+}
+
+@keyframes load {
+    from {
+        @apply left-[-150px];
+    }
+    to {
+        @apply left-full;
+    }
+}

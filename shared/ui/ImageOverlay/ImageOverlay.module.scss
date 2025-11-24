@@ -1,0 +1,80 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: var(--z-index-overlay);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--overlay);
+}
+
+.overlayEnter {
+    opacity: 0;
+}
+
+.overlayEnterActive {
+    opacity: 1;
+    transition: opacity 300ms;
+}
+
+.overlayExit {
+    opacity: 1;
+}
+
+.overlayExitActive {
+    opacity: 0;
+    transition: opacity 300ms;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    max-width: 70%;
+
+
+}
+
+.image {
+    display: block;
+
+    width: auto;
+
+    max-width: calc(100% - 80px);
+    height: auto;
+    max-height: calc(100% - 80px);
+    border-radius: 16px;
+
+    @include r($sMobile) {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+.wrapperIcon {
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
+
+
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+    fill: black;
+
+
+}

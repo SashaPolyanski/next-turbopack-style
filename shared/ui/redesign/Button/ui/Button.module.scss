@@ -1,0 +1,65 @@
+button.button, a.button {
+  box-sizing: border-box;
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  text-align: center;
+  outline: none;
+  
+
+
+  &:focus {
+    outline: none;
+  }
+
+  &_size {
+    &_s {
+      height: 48px;
+      padding-right: 20px;
+      padding-left: 20px;
+      border-radius: 12px;
+
+
+    }
+
+    &_m {
+      height: 56px;
+      padding-right: 24px;
+      padding-left: 24px;
+      border-radius: 12px;
+
+
+    }
+
+    &_l {
+      height: 68px;
+      padding-right: 32px;
+      padding-left: 32px;
+      border-radius: 16px;
+
+
+    }
+  }
+
+  &_form {
+    &_round {
+      border-radius: 100px;
+    }
+  }
+
+
+}
+
+button.disabled, a.disabled  {
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+button.onlyIcon, a.onlyIcon {
+  width: 50px;
+  height: 50px;
+
+
+}

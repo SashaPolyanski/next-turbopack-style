@@ -1,0 +1,43 @@
+.skeleton {
+    @apply relative overflow-hidden before:absolute before:left-[-150px] before:block before:w-1/5 before:h-full before:blur-2xl before:animate-[load_2s_infinite_ease-out] before:content-[""] before:top-0 rounded-sm-3-vw opacity-75 sm:rounded-xl-3;
+    background: rgba(130, 130, 130, 0.2);
+}
+
+.skeleton::before {
+    background: linear-gradient(
+            to right,
+            transparent 50%,
+            rgba(130, 130, 130, 0.3) 18%,
+            rgba(130, 130, 130, 0.2) 33%
+    );
+}
+
+@keyframes load {
+    from {
+        left: -150px;
+    }
+    to {
+        left: 100%;
+    }
+}
+
+.round {
+    border-radius: 50%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.empty {
+    &-xs {
+        gap: 4px;
+    }
+
+    &-s {
+        gap: 12px;
+
+
+    }
+}

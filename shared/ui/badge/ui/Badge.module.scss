@@ -1,0 +1,49 @@
+.badge {
+  display: inline-flex;
+  gap: 4px;
+  align-items: center;
+  border-radius: 100px;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  &_clear {
+    background: transparent;
+  }
+
+  &_complete {
+    background-color: rgba(142, 253, 1, 0.30);
+  }
+
+  &_default {
+    background-color: #F7F7FA;
+  }
+
+  &_small {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  &_medium {
+    padding: 14px 16px;
+    font-size: 16px;
+
+
+  }
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  color: #1B1B1B;
+}
+
+.primary {
+  color: #fff;
+}
+
+.secondary {
+  color: black;
+}

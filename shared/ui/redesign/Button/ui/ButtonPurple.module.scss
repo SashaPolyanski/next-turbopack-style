@@ -1,0 +1,32 @@
+button.primary, a.primary {
+  color: #7001FD;
+  background-color: white;
+
+
+  &:hover {
+    opacity: 0.75;
+  }
+
+  &:active {
+    color: #5A01CA;
+  }
+}
+
+button.secondary, a.secondary {
+  color: white;
+  background-color: #9B4DFE;
+
+
+  &:hover {
+    background-color: #5200BA;
+  }
+
+  &:active {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #5200BA;
+  }
+}
+
+button.disabled, a.disabled {
+  color: #CDA6FE;
+  background-color: #9B4DFE;
+}

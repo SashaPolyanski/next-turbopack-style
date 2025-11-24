@@ -1,0 +1,41 @@
+.card {
+  align-items: center;
+  &.alignCenter {
+    align-items: center;
+  }
+}
+
+
+
+
+.button {
+  flex: none;
+  width: 320px;
+  margin-left: 16px;
+  font-size: 18px;
+  font-weight: 400;
+
+
+}
+
+.lockedAttention {
+  display: flex;
+  flex: 0 0 400px;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
+
+  & span {
+    color: black;
+
+
+  }
+
+  & svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+
+}

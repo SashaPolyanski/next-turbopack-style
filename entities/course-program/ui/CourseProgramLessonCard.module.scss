@@ -1,0 +1,40 @@
+.card {
+
+
+  &:hover {
+    transform: scale(var(--scale-up));
+  }
+
+  &:active{
+    transform: scale(1);
+  }
+}
+
+.desktopImageContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+
+}
+
+.desktopImage {
+  height: 100%;
+}
+
+.mobileImageContainer {
+  display: none;
+
+
+}
+
+.mobileBg {
+  position: absolute;
+  transform: translate(-70px, 8%);
+  scale: 150%;  
+}
+
+.mobileImage {
+  z-index: 1;
+  transform: translateY(16px);
+}

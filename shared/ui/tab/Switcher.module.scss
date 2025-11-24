@@ -1,0 +1,25 @@
+.tabSwitcher {
+    height: calc(100% - 8px);
+}
+
+.first{
+    left: 4px;
+}
+
+.second {
+    left: calc(50% - 4px);
+}
+
+@include r($mobile) {
+    .tabSwitcher {
+        height: calc(100% - 2.5vw);
+    }
+    
+    .first{
+        left: 1.25vw;
+    }
+    
+    .second {
+        left: calc(50% - 1.25vw);
+    }
+}

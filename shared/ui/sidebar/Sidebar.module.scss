@@ -1,0 +1,121 @@
+/* Базовые стили для .sidebar */
+.sidebar {
+  --sidebar-size-l: 536px;
+  --sidebar-size-full: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100dvh;
+  overflow: hidden;
+}
+
+/* Если нет класса .hasOverlay */
+.sidebar:not(.hasOverlay) {
+  pointer-events: none;
+}
+
+/* Позиционирование sidebar */
+.sidebar_position_right {
+  justify-content: flex-end;
+}
+
+/* Стили для Overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  background: var(--overlay);
+  border: none;
+}
+
+/* Стили для окна sidebar */
+.window {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  pointer-events: auto;
+  background-color: white;
+  will-change: transform;
+}
+
+/* Позиционирование окна sidebar */
+.window_position_right {
+  width: var(--sidebar-width);
+  height: 100%;
+}
+
+
+.window_size_l {
+  --sidebar-width: var(--sidebar-size-l);
+  --sidebar-height: var(--sidebar-size-l);
+}
+
+.window_size_full {
+  --sidebar-width: calc(var(--sidebar-size-full) * 1vw);
+  --sidebar-height: calc(var(--sidebar-size-full) * 1vh);
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+
+
+
+  .title {
+    font-family: var(--font-unbounded), sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: #1B1B1B;
+
+
+  }
+
+  .cross {
+    width: 24px;
+    height: 24px;
+
+
+  }
+}
+
+/* Стили для контента sidebar */
+.content {
+  flex: 1;
+  overflow: auto;
+}
+
+/* Стили для действий sidebar */
+.actions {
+  flex-shrink: 0;
+}
+
+.overlay {
+  transition: opacity 0.24s ease;
+}
+.overlay[data-status='open'] {
+  opacity: 1;
+}
+.overlay[data-status='initial'],
+.overlay[data-status='close'] {
+  opacity: 0;
+}
+
+.window {
+  transition: transform 0.24s ease;
+}
+.window[data-status='open'],
+.window[data-status='close'] {
+  transform: translate3d(0, 0, 0);
+}
+.window[data-status='initial'],
+.window[data-status='close'] {
+  transform: translate3d(100%, 0, 0);
+}

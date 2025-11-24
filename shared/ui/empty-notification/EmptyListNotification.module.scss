@@ -1,0 +1,9 @@
+.emptyListNotification {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  overflow: hidden;
+  background-color: rgb(27,27,27);
+  border-radius: 16px;
+}

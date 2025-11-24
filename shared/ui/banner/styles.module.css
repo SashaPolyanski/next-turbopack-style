@@ -1,0 +1,15 @@
+.greenButton {
+    @apply !bg-green !text-black md:text-0xl sm:text-ls text-sm-1xl-vw md:font-montserrat md:font-semibold font-medium md:h-[96px] sm:h-[68px] h-[15vw] md:rounded-xl-4 sm:rounded-xl-3 rounded-sm-3-vw flex items-center justify-center
+}
+
+.green {
+    @apply !bg-green text-black
+}
+
+.black {
+    @apply !bg-[#2C2C2C] text-white
+}
+
+.bgBlur {
+    @apply bg-[#f9f5ff]/10
+}

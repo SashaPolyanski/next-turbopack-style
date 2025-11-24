@@ -1,0 +1,27 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 384px;
+}
+
+.title {
+  color: var(--text-icon-primary, #242429);
+}
+
+.description {
+  width: 600px;
+  color: var(--text-icon-secondary, #8F8FA3);
+
+
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+
+
+}

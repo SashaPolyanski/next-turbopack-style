@@ -1,0 +1,57 @@
+// Width
+@mixin r($width) {
+  @media only screen and (max-width: #{$width}px) {
+    @content;
+  }
+}
+
+@mixin rmin($width) {
+  @media only screen and (min-width: #{$width}px) {
+    @content;
+  }
+}
+
+// Height
+@mixin rh($height) {
+  @media only screen and (max-height: #{$height}px) {
+    @content;
+  }
+}
+
+@mixin rhmin($height) {
+  @media only screen and (min-height: #{$height}px) {
+    @content;
+  }
+}
+
+@mixin transition($property: all, $duration: 0.3s, $timing-function: ease, $delay: 0s) {
+  & {
+    transition: #{$property} #{$duration} #{$timing-function} #{$delay};
+  }
+}
+
+@mixin fluid-font-size($min-font-size: 12px, $max-font-size: 16px, $lower-range: 320px, $upper-range: 1440px) {
+  & {
+    font-size: calc(#{$min-font-size} + #{(calc($max-font-size / ($max-font-size * 0 + 1px)) - calc($min-font-size / ($min-font-size * 0 + 1px)))} * calc( (100vw - #{$lower-range}) / #{(calc($upper-range / ($upper-range * 0 + 1px)) - calc($lower-range / ($lower-range * 0 + 1px)))}));
+  }
+
+  @media screen and (max-width: $lower-range) {
+    font-size: $min-font-size;
+  }
+  @media screen and (min-width: $upper-range){
+    font-size: $max-font-size;
+  }
+}
+
+@mixin fluid-line-height($min-line-height: 12px, $max-line-height: 16px, $lower-range: 320px, $upper-range: 1440px) {
+  & {
+    line-height: calc(#{$min-line-height} + #{(calc($max-line-height / ($max-line-height * 0 + 1px)) - calc($min-line-height / ($min-line-height * 0 + 1px)))} * calc( calc(100vw - #{$lower-range}) / #{(calc($upper-range / ($upper-range * 0 + 1px)) - calc($lower-range / ($lower-range * 0 + 1px)))}));
+  }
+
+  @media screen and (max-width: $lower-range) {
+    line-height: $min-line-height;
+  }
+  @media screen and (min-width: $upper-range){
+    line-height: $max-line-height;
+  }
+}

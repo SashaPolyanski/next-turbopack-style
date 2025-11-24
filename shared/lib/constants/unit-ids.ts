@@ -1,0 +1,40 @@
+export const UNIT_IDS = {
+  // Журнал
+  WB_INSIGHT_CHAPTER_UID: '2myDH1b2KDmAdP1ML5l5BV70EHc',
+
+  // ТЕСТ ВЛОЖЕННОСТИ
+  NESTED_CATALOG: '2y01Ri4dvGH3aqY1UgW3gz8xxcL',
+
+  // Каталог курсов
+
+  // COURSES_CATALOG: '2y01Ri4dvGH3aqY1UgW3gz8xxcL',
+  COURSES_CATALOG: '2tDQgViVxb3ZyZzRpkJjfeOvXsH',
+  INTENSIVES_CATALOG: '2twYdzTg2TokHwFVvvdTK9a2PX2',
+  GUIDES_CATALOG: '2024-07-08T08-40-44z03-00-2ix17A',
+
+  GUIDE_COURSE_UNIT_ID: '2z2b5RaZzehognuueAaTw70Xg6h',
+  GUIDE_COURSE_TITLE: 'Как делегировать задачи для роста бизнеса',
+  GUIDE_COURSE_PUBLICATION_ID: '2023-09-05T17-36-16Z-5ce7ce',
+
+  MARKETPLACE_MANAGER_UNIT_ID: '2z2bCSEXocJtm4ORHArFUEkKxxS',
+  MARKETPLACE_MANAGER_TITLE:
+    'Как стать менеджером Wildberries и зарабатывать удалённо',
+  MARKETPLACE_MANAGER_PUBLICATION_ID: '2023-09-05T17-36-16Z-5ce7ce',
+
+  CERTIFICATION_COURSE_UNIT_ID: '31Gj0W7ptJ7NCeVYTTccdVXWgaF',
+  CERTIFICATION_COURSE_PUBLICATION_ID: '2023-09-05T17-36-16Z-5ce7ce',
+
+  // курс: Бизнес на Wildberries: как начать с нуля и выйти на стабильный доход
+  COURSE_START_UNIT_ID: '2024-06-18T11-45-40z03-00-2i2t8a',
+  COURSE_START_PUBLICATION_ID: '2tWkYgSQifoFaBYPRbqmVSYV74O',
+
+  // id группы ProWB
+  PROWB_GROUP: '2024-06-27T15-15-44z03-00-2iSinJ',
+
+  // id тега Важное
+  BEST_COURSES_CATEGORY_ID: '2tZRPSIpnaBaMCdv7Zqabd47uGs',
+
+  TEST_ID: '2pQDQqyi3A4LvG9aA0rDvuPvi8q',
+  DEFAULT_PUB_ID: '2024-07-26T12-24-34z03-00-2jmIY',
+  DEFAULT_UNIT_ID: '2024-07-26T12-18-10z03-00-2jmHmV',
+};

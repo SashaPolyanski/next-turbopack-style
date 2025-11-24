@@ -1,0 +1,30 @@
+.title {
+  margin-bottom: 40px;
+
+
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+
+
+}
+
+.card {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  width: 690px;
+
+
+}
+
+.icon {
+  flex: none;
+  width: 40px;
+  height: 40px;
+
+
+}

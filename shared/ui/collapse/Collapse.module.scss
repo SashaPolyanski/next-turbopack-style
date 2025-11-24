@@ -1,0 +1,56 @@
+.collapse {
+    &_l {
+        --collase-margin-left: 32px;
+
+
+    }
+}
+
+.body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--animation-time) cubic-bezier(0.7, 0, 0.5, 1);
+}
+
+
+.open {
+    max-height: var(--collapse-body-max-height);
+    //overflow: visible;
+}
+
+.label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background var(--animation-time);
+}
+
+.labelText {
+    flex: 1;
+}
+
+.icon {
+    flex: none;
+}
+
+.size {
+    &_m {
+        font-size: 15px;
+    }
+
+    &_l {
+        font-size: 24px;
+        line-height: 30px;
+
+
+    }
+}
+
+.iconWrapper {
+    display: flex;
+    margin-left: var(--collase-margin-left);
+
+
+}

@@ -1,0 +1,20 @@
+button.primary,
+button.secondary,
+a.primary,
+a.secondary {
+  color: var(--secondary-color);
+  background-color: var(--secondary-background);
+
+
+  &:hover {
+    background-color: var(--secondary-background-hover);
+  }
+
+  &:active {
+    background-color: var(--secondary-background-active);
+  }
+}
+
+button.disabled, a.disabled {
+  background-color: var(--secondary-background-disabled);
+}

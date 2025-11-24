@@ -1,0 +1,23 @@
+.bannerCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #7001FD;
+
+
+
+  & .bannerTitle {
+    margin-bottom: 12px;
+    font-family: var(--font-unbounded), sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+
+
+  }
+  & .button {
+    width: 320px;
+    font-weight: 400;
+    color: #000;
+
+  }
+}

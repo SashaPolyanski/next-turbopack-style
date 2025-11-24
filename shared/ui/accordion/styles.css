@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.accordion {
+  cursor: pointer;
+}
+
+.accordion-body {
+  max-height: 0;
+  opacity: 0;
+  transition: 500ms max-height ease;
+  transition: 500ms padding ease;
+}
+
+.accordion .accordion-body.open {
+  max-height: 800px;
+  opacity: 1;
+  transition: 500ms max-height ease;
+  transition: 500ms padding ease;
+}
+
+.accordioncontent a,
+.accordioncontent a * {
+  @apply text-violet active:text-violet-light hover:text-violet-light cursor-pointer font-normal
+}
+
+.list-layout li {
+  @apply text-gray
+}
+
+.list-layout p {
+  @apply text-gray sm:text-m text-sm-ls-vw
+}
+
+.list-layout a {
+  @apply sm:hover:text-gray-light sm:active:text-violet text-gray-dark cursor-pointer
+}
+
+.list-layout ul {
+  @apply !list-disc sm:ps-5 sm:ms-2 ps-sm-3-vw ms-sm-1-vw
+}
+
+.list-layout li p {
+  @apply inline
+}

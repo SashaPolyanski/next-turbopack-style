@@ -1,0 +1,18 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.empty {
+  &_s {
+    gap: 8px;
+
+
+  }
+
+  &_m {
+    gap: 12px;
+
+
+  }
+}
