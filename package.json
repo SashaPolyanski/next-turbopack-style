@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build --turbopack && next start"
+    "build": "next build --turbopack",
+    "start": "next start"
   },
   "dependencies": {
     "@floating-ui/react": "^0.27.8",
